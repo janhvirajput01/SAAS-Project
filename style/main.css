@@ -1,0 +1,198 @@
+footer .footer_right, footer, nav {
+  display: flex;
+  align-items: center;
+}
+
+nav .right button {
+  background-color: #0d6efd;
+  margin: 1rem 0;
+  border: 1px solid #0d6efd;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 1rem 2rem;
+  justify-content: space-between;
+}
+nav .logo {
+  color: #48494b;
+  font-weight: 520;
+  font-size: 1.5rem;
+  width: 30%;
+}
+nav .right {
+  display: none;
+  width: 70%;
+}
+nav .right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+nav .right ul li {
+  margin-left: 20px;
+}
+nav .right button {
+  color: #0d6efd;
+  background-color: transparent;
+  padding: 0.6rem 20px;
+}
+@media screen and (min-width: 768px) {
+  nav .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+nav #menu {
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  nav #menu {
+    display: none;
+  }
+}
+
+.main {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.main h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #48494b;
+  margin-top: 1rem;
+}
+.main .lead {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #979a87;
+  font-weight: 200;
+}
+.main .pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid #979a87;
+}
+@media screen and (min-width: 768px) {
+  .main .pricing-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.main .pricing-container .card {
+  border: 1px solid #979a87;
+  border-radius: 5px;
+  height: 35vh;
+  padding-bottom: 40px;
+}
+.main .pricing-container .card .title {
+  background-color: rgba(0, 0, 0, 0.03);
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+  font-weight: 500;
+}
+.main .pricing-container .card ul {
+  list-style: none;
+}
+.main .pricing-container .card ul li {
+  line-height: 1.5;
+}
+.main .pricing-container .card .price {
+  margin: 1rem 0;
+  color: black;
+  font-size: 2rem;
+}
+.main .pricing-container .card .price .mon {
+  color: #979a87;
+  font-size: 30px;
+}
+.main .pricing-container .card button {
+  background-color: #0d6efd;
+  width: 90%;
+  margin: 1rem 0;
+  color: white;
+  border: 1px solid #0d6efd;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+.main .pricing-container .card:nth-child(3) {
+  grid-column: span 2;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .main .pricing-container .card:nth-child(3) {
+    grid-column: span 1;
+  }
+}
+.main .pricing-container .card:nth-child(1) button {
+  background-color: transparent;
+  color: #0d6efd;
+}
+
+footer {
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row;
+  }
+  footer .left_sec {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+footer .logo {
+  background-color: #563d7c;
+  width: 40px;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+footer .footer_right {
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  width: 100%;
+}
+footer .footer_right .sec {
+  width: 50%;
+}
+footer .footer_right .sec h5 {
+  font-size: 1.2rem;
+}
+footer .footer_right .sec ul {
+  list-style: none;
+}
+footer .footer_right .sec ul li {
+  color: #979a87;
+  margin-top: 5px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer_right .sec {
+    width: 30%;
+  }
+}/*# sourceMappingURL=main.css.map */
